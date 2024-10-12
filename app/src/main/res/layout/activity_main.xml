@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Banner ImageView -->
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner" />
+
+    <!-- Button for List of Bird Species -->
+    <Button
+        android:id="@+id/btnListBirds"
+        android:text="List of Bird Species"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bannerImageView"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="12dp" />
+
+    <!-- Button for Search by Image -->
+    <Button
+        android:id="@+id/btnSearchByImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnListBirds"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:text="Search by Image"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Additional Content -->
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearchByImage"
+        android:layout_marginTop="32dp"
+        android:text="Explore different bird species and identify birds through images."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <!-- Sample bird facts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTextView"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fun Bird Fact 1: Hummingbirds can fly backwards."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fun Bird Fact 2: The ostrich is the largest bird in the world."
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fun Bird Fact 3: Some bird species are known for their impressive migratory journeys."
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+</RelativeLayout>
